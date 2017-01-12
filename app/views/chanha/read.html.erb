@@ -1,0 +1,13 @@
+<h1>read</h1>
+<form action="/chanha/write" method="POST">
+    Name: <input type="text" name="author_name"><br>
+    Password: <input type="password" name="password"><br>
+    Content:                                    
+        <textarea rows="4" cols="50" name="content"></textarea><br>
+    <input type="submit" value="작성">   
+</form><br><br>
+
+
+<%@show.each do |x|%>
+    <%=x.author%> : <%=x.content%>&nbsp;<a href="/chanha/password_delete/<%=x.id%>">삭제</a><a href="/chanha/password_edit/<%=x.id%>">수정</a><br>
+<%end%>

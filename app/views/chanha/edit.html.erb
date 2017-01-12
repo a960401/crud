@@ -1,0 +1,8 @@
+<form action="/chanha/update/<%=@edit.id%>" method="POST">
+    Name: <input type="text" name="author_name" value="<%=@edit.author%>"><br>
+    Password: <input type="password" name="password" value="<%=@edit.password%>"><br>
+    Content:
+        <textarea rows="4" cols="50" name="content"><%=@edit.content%></textarea><br>
+    <input type="submit" value="수정">   
+</form><br><br>
+
